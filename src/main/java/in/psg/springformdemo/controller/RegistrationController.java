@@ -17,6 +17,7 @@ public class RegistrationController {
     public String doRegistration(@ModelAttribute("user")User user){
         System.out.println(user.getFirstName());
         System.out.println(user.getLastName());
+        System.out.println(user.getPreferences().isReceiveNewsletter());
         return "redirect:/registration";
     }
 }

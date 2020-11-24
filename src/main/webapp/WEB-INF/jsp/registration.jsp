@@ -25,10 +25,16 @@
                     <td><form:input path="lastName" /></td>
                 </tr>
                 <tr>
+                    <td>Subscribe to newsletter?:</td>
+                        <%-- Approach 1: Property is of type java.lang.Boolean --%>
+                    <td><form:checkbox path="preferences.receiveNewsletter"/></td>
+                </tr>
+                <tr>
                     <td colspan="2">
                         <input type="submit" value="Submit" />
                     </td>
                 </tr>
+
             </table>
         </form:form>
     </div>
