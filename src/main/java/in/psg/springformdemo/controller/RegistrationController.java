@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import java.util.Arrays;
+
 @Controller
 public class RegistrationController {
     @GetMapping(value = "/registration")
@@ -18,6 +20,8 @@ public class RegistrationController {
         System.out.println(user.getFirstName());
         System.out.println(user.getLastName());
         System.out.println(user.getPreferences().isReceiveNewsletter());
+        System.out.println(Arrays.toString(user.getPreferences().getInterests()));
+        System.out.println(user.getPreferences().getFavouriteWord());
         return "redirect:/registration";
     }
 }
