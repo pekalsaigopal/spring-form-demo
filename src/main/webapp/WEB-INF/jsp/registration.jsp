@@ -40,6 +40,13 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>Activities:</td>
+                    <td>
+                            <%-- Property is of an array or of type java.util.Collection --%>
+                        <form:checkboxes path="preferences.activities" items="${interestList}"/>
+                    </td>
+                </tr>
+                <tr>
                     <td>Favourite Word:</td>
                     <td>
                             <%-- Approach 3: Property is of type java.lang.Object --%>

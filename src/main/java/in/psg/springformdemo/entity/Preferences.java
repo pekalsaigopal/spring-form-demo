@@ -5,6 +5,8 @@ public class Preferences {
 
     private String[] interests;
 
+    private String[] activities;
+
     private String favouriteWord;
 
     public boolean isReceiveNewsletter() {
@@ -31,4 +33,11 @@ public class Preferences {
         this.favouriteWord = favouriteWord;
     }
 
+    public String[] getActivities() {
+        return activities;
+    }
+
+    public void setActivities(String[] activities) {
+        this.activities = activities;
+    }
 }
