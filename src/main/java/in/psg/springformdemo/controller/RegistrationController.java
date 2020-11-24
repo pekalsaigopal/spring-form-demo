@@ -27,6 +27,7 @@ public class RegistrationController {
         System.out.println(Arrays.toString(user.getPreferences().getInterests()));
         System.out.println(Arrays.toString(user.getPreferences().getActivities()));
         System.out.println(user.getPreferences().getFavouriteWord());
+        System.out.println(user.getSex());
         return "redirect:/registration";
     }
 }

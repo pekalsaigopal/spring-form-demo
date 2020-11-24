@@ -3,7 +3,16 @@ package in.psg.springformdemo.entity;
 public class User {
     private String firstName;
     private String lastName;
+    private String sex;
     private Preferences preferences;
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
 
     public Preferences getPreferences() {
         return preferences;
